@@ -83,7 +83,7 @@ void pattern2(){
       analogWrite(row6,i);
       analogWrite(row7,i);
       analogWrite(row8,i);
-      delay(1000);
+      delay(250);
     }
     for(int i=255;i>0;i-=2.55){ 
       analogWrite(row1,i);
@@ -94,7 +94,7 @@ void pattern2(){
       analogWrite(row6,i);
       analogWrite(row7,i);
       analogWrite(row8,i);
-      delay(1000);
+      delay(250);
     } 
 
     //state 2
@@ -118,7 +118,7 @@ void pattern2(){
       analogWrite(row6,i);
       analogWrite(row7,i);
       analogWrite(row8,i);
-      delay(1000);
+      delay(250);
     }
     for(int i=255;i>0;i-=2.55){ 
       analogWrite(row1,i);
@@ -129,7 +129,7 @@ void pattern2(){
       analogWrite(row6,i);
       analogWrite(row7,i);
       analogWrite(row8,i);
-      delay(1000);
+      delay(250);
     }  
 
     //state 3
@@ -153,7 +153,7 @@ void pattern2(){
       analogWrite(row6,i);
       analogWrite(row7,i);
       analogWrite(row8,i);
-      delay(1000);
+      delay(250);
     }
     for(int i=255;i>0;i-=2.55){ 
       analogWrite(row1,i);
@@ -164,9 +164,184 @@ void pattern2(){
       analogWrite(row6,i);
       analogWrite(row7,i);
       analogWrite(row8,i);
-      delay(1000);
+      delay(250);
     }  
-    delay(100);
+
+    //state 4
+     int col_out4[] = {1, 1, 1, 0, 1, 1, 1, 1};
+    digitalWrite(col1,col_out4[0]);
+    digitalWrite(col2,col_out4[1]);
+    digitalWrite(col3,col_out4[2]);
+    digitalWrite(col4,col_out4[3]);
+    digitalWrite(col5,col_out4[4]);
+    digitalWrite(col6,col_out4[5]);
+    digitalWrite(col7,col_out4[6]);
+    digitalWrite(col8,col_out4[7]);
+    
+    
+    for(float i=0;i<255;i+=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    }
+    for(int i=255;i>0;i-=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    } 
+
+     //state 5
+     int col_out5[] = {1, 1, 1, 1, 0, 1, 1, 1};
+    digitalWrite(col1,col_out5[0]);
+    digitalWrite(col2,col_out5[1]);
+    digitalWrite(col3,col_out5[2]);
+    digitalWrite(col4,col_out5[3]);
+    digitalWrite(col5,col_out5[4]);
+    digitalWrite(col6,col_out5[5]);
+    digitalWrite(col7,col_out5[6]);
+    digitalWrite(col8,col_out5[7]);
+    
+    
+    for(float i=0;i<255;i+=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    }
+    for(int i=255;i>0;i-=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    } 
+
+    //state 6
+     int col_out6[] = {1, 1, 1, 1, 1, 0, 1, 1};
+    digitalWrite(col1,col_out6[0]);
+    digitalWrite(col2,col_out6[1]);
+    digitalWrite(col3,col_out6[2]);
+    digitalWrite(col4,col_out6[3]);
+    digitalWrite(col5,col_out6[4]);
+    digitalWrite(col6,col_out6[5]);
+    digitalWrite(col7,col_out6[6]);
+    digitalWrite(col8,col_out6[7]);
+    
+    
+    for(float i=0;i<255;i+=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    }
+    for(int i=255;i>0;i-=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    } 
+
+    //state 7
+     int col_out7[] = {1, 1, 1, 1, 1, 1, 0, 1};
+    digitalWrite(col1,col_out7[0]);
+    digitalWrite(col2,col_out7[1]);
+    digitalWrite(col3,col_out7[2]);
+    digitalWrite(col4,col_out7[3]);
+    digitalWrite(col5,col_out7[4]);
+    digitalWrite(col6,col_out7[5]);
+    digitalWrite(col7,col_out7[6]);
+    digitalWrite(col8,col_out7[7]);
+    
+    
+    for(float i=0;i<255;i+=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    }
+    for(int i=255;i>0;i-=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    } 
+
+    //state 8
+     int col_out8[] = {1, 1, 1, 1, 1, 1, 1, 0};
+    digitalWrite(col1,col_out8[0]);
+    digitalWrite(col2,col_out8[1]);
+    digitalWrite(col3,col_out8[2]);
+    digitalWrite(col4,col_out8[3]);
+    digitalWrite(col5,col_out8[4]);
+    digitalWrite(col6,col_out8[5]);
+    digitalWrite(col7,col_out8[6]);
+    digitalWrite(col8,col_out8[7]);
+    
+    
+    for(float i=0;i<255;i+=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    }
+    for(int i=255;i>0;i-=2.55){ 
+      analogWrite(row1,i);
+      analogWrite(row2,i);
+      analogWrite(row3,i);
+      analogWrite(row4,i);
+      analogWrite(row5,i);
+      analogWrite(row6,i);
+      analogWrite(row7,i);
+      analogWrite(row8,i);
+      delay(250);
+    } 
+    //delay(100);
 
     
 }
