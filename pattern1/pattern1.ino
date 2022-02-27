@@ -17,6 +17,7 @@ int col7 = 34;
 int col8 = 36;
 
 int pin_col[] = {col1, col2, col3, col4, col5, col6, col7, col8};
+int pin
 
 void setup() {
   pinMode(row1, OUTPUT);
