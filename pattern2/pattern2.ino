@@ -587,7 +587,15 @@ void pattern2(){
       delay(250);
     } 
 
-    // loop row chasing state ////////////////////////////////////////////////////
+    
+
+    //delay(100);
+
+    
+}
+
+void pattern3(){
+  // loop row chasing state ////////////////////////////////////////////////////
     int col_out21[] = {0, 0, 0, 0, 0, 0, 0, 0};
     digitalWrite(col1,col_out21[0]);
     digitalWrite(col2,col_out21[1]);
@@ -622,12 +630,7 @@ void pattern2(){
         } 
         Serial.println(k);
       }
-
-    //delay(100);
-
-    
 }
-
 
 void setup() {
   pinMode(row1, OUTPUT);
@@ -651,6 +654,8 @@ void setup() {
   pinMode(2, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(2), pattern2, RISING);
   
+  pinMode(3, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(3), pattern3, RISING);
   Serial.begin(9600);
 }
 
